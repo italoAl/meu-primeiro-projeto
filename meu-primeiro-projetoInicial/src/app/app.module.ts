@@ -9,13 +9,15 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import {SharedModule} from './shared/shared.module';
+import { TestandogitComponent } from './testandogit/testandogit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     DiretivasEstruturaisComponent,
-    DiretivasAtributosComponent    
+    DiretivasAtributosComponent,
+    TestandogitComponent    
   ],
   imports: [
     BrowserModule,
