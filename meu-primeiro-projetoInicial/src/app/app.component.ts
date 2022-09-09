@@ -3,8 +3,8 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <app-diretivas-atributos>
+  template: `   
+  <!-- <app-diretivas-atributos>
   <h1>Aulas de Diretivas Atributos </h1>
   <h3>Final da aula</h3>
   </app-diretivas-atributos>
@@ -21,9 +21,11 @@ import { RouterOutlet } from '@angular/router';
  <app-output (enviarDados)="setDados($event)"></app-output>
  <app-new-component></app-new-component>
  <app-input [contador] = "addValue"></app-input>
- <button (click)= "add()">Botão Add</button>
+ <button (click)= "add()">Botão Add</button>  -->
+ <app-food-list></app-food-list>
  <router-outlet></router-outlet>
- `  
+ <app-food-add></app-food-add>
+ `
 })
 export class AppComponent implements OnInit {
 
