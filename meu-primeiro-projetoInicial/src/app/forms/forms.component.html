@@ -1,9 +1,21 @@
-<form #form="ngForm">
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
     
     <label>
         nome:
-    <input type="text" name="nome" ngModel>
+    <input type="text" name="nome" #nome= "ngModel" [ngModel]="nome.value" required>
+    <span *ngIf="!nome.valid && (nome.dirty &&  nome.touched)">
+        Invalid text
+    </span>
     </label>
+
+    {{nome.valid}}
+    {{nome.dirty}}
+    {{nome.touched}}
+
+    <br>
+    <br>
+
+    <!-- {{ form.valid }} -->
 <br>
 <br>
 
@@ -55,7 +67,7 @@
 </select>
 <br>
 <br>
-
+<button [disabled]="form.invalid">enviar dados</button>
 </form>
 
 <br>
