@@ -30,7 +30,7 @@ export class FoodListComponent implements OnInit {
       res => {
         return console.log(res)
       },
-      error => console.log(error)
+      error => error
     )
   }
 

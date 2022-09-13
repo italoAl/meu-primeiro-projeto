@@ -21,10 +21,13 @@ import { RouterOutlet } from '@angular/router';
  <app-output (enviarDados)="setDados($event)"></app-output>
  <app-new-component></app-new-component>
  <app-input [contador] = "addValue"></app-input>
- <button (click)= "add()">Botão Add</button>  -->
+ <button (click)= "add()">Botão Add</button>  
+ 
  <app-food-list></app-food-list>
- <router-outlet></router-outlet>
  <app-food-add></app-food-add>
+  --> 
+  <app-forms></app-forms>
+ <router-outlet></router-outlet>
  `
 })
 export class AppComponent implements OnInit {
